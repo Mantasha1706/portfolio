@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakerFest Student Login Links</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .class-section {
+            margin-bottom: 40px;
+        }
+        .class-title {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .student-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .student-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        .student-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+        .student-number {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+        .student-email {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+            word-break: break-all;
+        }
+        .login-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+        .login-btn:hover {
+            opacity: 0.9;
+        }
+        .instructions {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+        .instructions h3 {
+            margin-top: 0;
+            color: #856404;
+        }
+        .instructions p {
+            margin: 5px 0;
+            color: #856404;
+        }
+        .download-csv {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 12px 24px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            max-width: 200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 MakerFest Student Login Portal</h1>
+        <p class="subtitle">Click on your student number to access your portfolio</p>
+        
+        <div class="instructions">
+            <h3>📋 Instructions for Students</h3>
+            <p>1. Find your student number below</p>
+            <p>2. Click the "Login as Student X" button</p>
+            <p>3. Password for all accounts: <strong>student123</strong></p>
+            <p>4. Fill in your project details and create your poster!</p>
+        </div>
+
+        
+                <div class="class-section">
+                    <div class="class-title">📚 Class 4E (9 students)</div>
+                    <div class="student-grid">
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 1</div>
+                                <div class="student-email">student1@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student1@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 1
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 2</div>
+                                <div class="student-email">student2@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student2@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 2
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 3</div>
+                                <div class="student-email">student3@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student3@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 3
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 4</div>
+                                <div class="student-email">student4@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student4@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 4
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 5</div>
+                                <div class="student-email">student5@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student5@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 5
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 6</div>
+                                <div class="student-email">student6@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student6@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 6
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 7</div>
+                                <div class="student-email">student7@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student7@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 7
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 8</div>
+                                <div class="student-email">student8@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student8@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 8
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 9</div>
+                                <div class="student-email">student9@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student9@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 9
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="class-section">
+                    <div class="class-title">📚 Class 4F (8 students)</div>
+                    <div class="student-grid">
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 10</div>
+                                <div class="student-email">student10@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student10@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 10
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 11</div>
+                                <div class="student-email">student11@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student11@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 11
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 12</div>
+                                <div class="student-email">student12@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student12@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 12
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 13</div>
+                                <div class="student-email">student13@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student13@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 13
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 14</div>
+                                <div class="student-email">student14@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student14@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 14
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 15</div>
+                                <div class="student-email">student15@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student15@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 15
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 16</div>
+                                <div class="student-email">student16@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student16@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 16
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 17</div>
+                                <div class="student-email">student17@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student17@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 17
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="class-section">
+                    <div class="class-title">📚 Class 4G (8 students)</div>
+                    <div class="student-grid">
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 18</div>
+                                <div class="student-email">student18@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student18@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 18
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 19</div>
+                                <div class="student-email">student19@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student19@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 19
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 20</div>
+                                <div class="student-email">student20@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student20@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 20
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 21</div>
+                                <div class="student-email">student21@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student21@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 21
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 22</div>
+                                <div class="student-email">student22@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student22@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 22
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 23</div>
+                                <div class="student-email">student23@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student23@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 23
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 24</div>
+                                <div class="student-email">student24@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student24@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 24
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 25</div>
+                                <div class="student-email">student25@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student25@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 25
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="class-section">
+                    <div class="class-title">📚 Class 5D (9 students)</div>
+                    <div class="student-grid">
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 26</div>
+                                <div class="student-email">student26@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student26@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 26
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 27</div>
+                                <div class="student-email">student27@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student27@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 27
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 28</div>
+                                <div class="student-email">student28@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student28@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 28
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 29</div>
+                                <div class="student-email">student29@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student29@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 29
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 30</div>
+                                <div class="student-email">student30@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student30@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 30
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 31</div>
+                                <div class="student-email">student31@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student31@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 31
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 32</div>
+                                <div class="student-email">student32@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student32@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 32
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 33</div>
+                                <div class="student-email">student33@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student33@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 33
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 34</div>
+                                <div class="student-email">student34@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student34@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 34
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="class-section">
+                    <div class="class-title">📚 Class 5E (8 students)</div>
+                    <div class="student-grid">
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 35</div>
+                                <div class="student-email">student35@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student35@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 35
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 36</div>
+                                <div class="student-email">student36@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student36@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 36
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 37</div>
+                                <div class="student-email">student37@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student37@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 37
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 38</div>
+                                <div class="student-email">student38@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student38@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 38
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 39</div>
+                                <div class="student-email">student39@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student39@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 39
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 40</div>
+                                <div class="student-email">student40@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student40@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 40
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 41</div>
+                                <div class="student-email">student41@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student41@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 41
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 42</div>
+                                <div class="student-email">student42@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student42@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 42
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="class-section">
+                    <div class="class-title">📚 Class 5F (8 students)</div>
+                    <div class="student-grid">
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 43</div>
+                                <div class="student-email">student43@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student43@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 43
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 44</div>
+                                <div class="student-email">student44@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student44@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 44
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 45</div>
+                                <div class="student-email">student45@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student45@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 45
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 46</div>
+                                <div class="student-email">student46@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student46@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 46
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 47</div>
+                                <div class="student-email">student47@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student47@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 47
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 48</div>
+                                <div class="student-email">student48@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student48@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 48
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 49</div>
+                                <div class="student-email">student49@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student49@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 49
+                                </a>
+                            </div>
+                        
+                            <div class="student-card">
+                                <div class="student-number">Student 50</div>
+                                <div class="student-email">student50@aischool.net</div>
+                                <a href="http://localhost:3000/login?email=student50@aischool.net" class="login-btn" target="_blank">
+                                    Login as Student 50
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
+            
+    </div>
+</body>
+</html>
