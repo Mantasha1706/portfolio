@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --solar-orange: #f97316;
+  --solar-yellow: #eab308;
+  --solar-gradient-from: #f97316;
+  --solar-gradient-to: #eab308;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-solar-orange: var(--solar-orange);
+  --color-solar-yellow: var(--solar-yellow);
+  --color-solar-gradient-from: var(--solar-gradient-from);
+  --color-solar-gradient-to: var(--solar-gradient-to);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Force standard Hex colors for common shades to fix PDF generation issues */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-800: #166534;
+
+  --color-blue-50: #eff6ff;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+
+  --color-indigo-600: #4f46e5;
+  --color-indigo-700: #4338ca;
+
+  --color-purple-400: #a78bfa;
+  --color-purple-500: #8b5cf6;
+
+  --color-red-50: #fef2f2;
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+
+  /* Override internal shadow variables which might use modern colors */
+  --tw-shadow-color: rgba(0, 0, 0, 0.1);
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+}
+
+/* Force standard colors for selection and focus to avoid Lab/OKLCH in computed styles */
+* {
+  outline-color: #000000 !important;
+}
+
+::selection {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
